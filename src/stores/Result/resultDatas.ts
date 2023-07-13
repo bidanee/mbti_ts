@@ -1,0 +1,117 @@
+import Sphinx from "../../assets/img/sphynx.jpg";
+import { IResult } from "./types";
+
+export const ResultData: IResult[] = [
+  {
+    id: 1,
+    name: "스핑크스",
+    best: "ISTP",
+    desc: "사교적인 ESTP와 어울리는 스핑크스는 장난기가 많습니다.",
+    img: Sphinx,
+  },
+  {
+    id: 2,
+    name: "브리티쉬숏헤어",
+    best: "",
+    desc: "ISTJ처럼 ",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  },
+  {
+    id: 2,
+    name: "",
+    best: "",
+    desc: "",
+    img: ,
+  }
+];
