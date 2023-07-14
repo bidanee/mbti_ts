@@ -30,6 +30,7 @@ export default function MainPage() {
             테스트 시작하기
           </button>
         </div>
+        <div className="adfit" />
       </div>
     </>
   );

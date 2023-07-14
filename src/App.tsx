@@ -12,7 +12,6 @@ function App() {
         <Route path="/question" element={<QuestionPage />} />
         <Route path="/result" element={<ResultPage />} />
       </Routes>
-      <div className="adfit" />
     </BrowserRouter>
   );
 }

@@ -33,6 +33,7 @@ export default function ResultPage() {
             </div>
           </div>
         </div>
+        <div className="adfit" />
       </div>
     </>
   );
