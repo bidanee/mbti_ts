@@ -21,6 +21,12 @@ export default function QuestionPage() {
     if (QuestionData.length !== questionNo + 1) {
       setQuestionNo(questionNo + 1);
     } else {
+      const mbti = newScore.reduce(
+        (acc, curr) =>
+          acc +
+          (curr.score >= 2 ? curr.id.substring(0, 1) : curr.id.substring(1, 2)),
+        ""
+      );
       navigate({
         pathname: "/result",
         search: `?${createSearchParams({
@@ -39,13 +45,13 @@ export default function QuestionPage() {
 
         <div className="flex flex-col items-center justify-center">
           <button
-            className="w-3/4 h-16 btn btn-warning text-neutral-500 m-2 text-lg"
+            className="w-10/12 h-24 btn btn-warning text-neutral-500 m-2 text-b p-1"
             onClick={() => handleClickAnswer(1, QuestionData[questionNo].type)}
           >
             {QuestionData[questionNo].answerb}
           </button>
           <button
-            className="w-3/4 h-16 btn btn-warning text-neutral-500 m-2 text-lg"
+            className="w-10/12 h-24 btn btn-warning text-neutral-500 m-2 text-b"
             onClick={() => handleClickAnswer(0, QuestionData[questionNo].type)}
           >
             {QuestionData[questionNo].answera}
