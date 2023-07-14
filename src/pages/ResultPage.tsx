@@ -27,10 +27,13 @@ export default function ResultPage() {
       <div className="w-full h-screen flex flex-col bg-yellow-100">
         <Header type="title" questionNo={0} />
         <div className="flex flex-col justify-center items-center mt-5">
-          <div className="mb-5 text-4xl">결과보기</div>
+          <div className="mb-1 text-3xl">결과보기</div>
 
-          <div className=" w-72 mb-5">
-            <img className="mask mask-circle" src={testResult?.img} />
+          <div className="mb-2">
+            <img
+              className="mask mask- w-36 h-44 mask-squircle "
+              src={testResult?.img}
+            />
           </div>
 
           <div className="flex flex-col items-center justify-center mb-5 ">
