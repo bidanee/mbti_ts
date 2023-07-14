@@ -1,12 +1,23 @@
-import { useSearchParams } from "react-router-dom";
+import { useNavigate, useSearchParams } from "react-router-dom";
 import Header from "../components/Header";
 import { ResultData } from "../stores/Result/resultDatas";
 import { IResult } from "../stores/Result/types";
+import KakaoButton from "../components/KakaoButton";
 
 export default function ResultPage() {
+  const navigate = useNavigate();
   const [serchParams] = useSearchParams();
   const mbti = serchParams.get("mbti");
-  const testResult = ResultData.find((cat: IResult) => cat.best === mbti);
+  const testResult: IResult = ResultData.find(
+    (cat: IResult) => cat.best === mbti
+  ) ?? {
+    id: 0,
+    name: "",
+    best: "",
+    desc: "",
+    img: "",
+    mbti: "",
+  };
   const friendCat = ResultData.find(
     (friend) => friend.best === testResult?.mbti
   );
@@ -35,12 +46,13 @@ export default function ResultPage() {
             </div>
           </div>
           <div className="flex">
-            <button className="btn btn-error mr-3 text-white">
+            <button
+              onClick={() => navigate("/")}
+              className="btn btn-error mr-3 text-white"
+            >
               테스트 다시하기
             </button>
-            <button className="btn btn-warning text-white">
-              카카오톡 공유하기
-            </button>
+            <KakaoButton data={testResult} />
           </div>
         </div>
       </div>
