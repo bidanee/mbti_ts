@@ -48,13 +48,13 @@ export default function QuestionPage() {
             className="w-10/12 h-24 btn btn-warning text-neutral-500 m-2 text-b p-1"
             onClick={() => handleClickAnswer(1, QuestionData[questionNo].type)}
           >
-            {QuestionData[questionNo].answerb}
+            {QuestionData[questionNo].answera}
           </button>
           <button
             className="w-10/12 h-24 btn btn-warning text-neutral-500 m-2 text-b"
             onClick={() => handleClickAnswer(0, QuestionData[questionNo].type)}
           >
-            {QuestionData[questionNo].answera}
+            {QuestionData[questionNo].answerb}
           </button>
         </div>
       </div>
