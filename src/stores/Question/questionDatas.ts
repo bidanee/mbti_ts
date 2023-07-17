@@ -79,7 +79,8 @@ export const QuestionData: IQuestion[] = [
   {
     id: 11,
     title: "고양이 사료가 우연히 여러 종류가 생겼다. 급여하는 방법은?",
-    answera: "사료를 조금씩 급여해서 고양이의 기호 테스트 후 잘",
+    answera:
+      "사료를 조금씩 급여해서 고양이의 기호 테스트 후 잘 맞는걸로 급여한다.",
     answerb: "끌리는 걸로 그때그때 급여한다.",
     type: "JP",
   },
