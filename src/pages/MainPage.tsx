@@ -10,10 +10,10 @@ export default function MainPage() {
   };
   return (
     <>
-      <div className="w-full h-screen flex flex-col bg-yellow-100">
+      <div className="w-full h-screen flex flex-col bg-yellow-100 justify-center">
         <Header type="title" questionNo={0} />
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="mb-5 text-3xl">나에게 맞는 주인님은?</div>
+        <div className="flex flex-col justify-center items-center">
+          <div className="mb-10 text-xl sm:text-3xl">나에게 맞는 주인님은?</div>
 
           <div className=" w-72 mb-5">
             <img className="mask mask-circle" src={MainImg} />

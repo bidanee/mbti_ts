@@ -36,22 +36,22 @@ export default function QuestionPage() {
     }
   };
   return (
-    <div className="flex flex-col w-full h-screen bg-yellow-100">
+    <div className="flex flex-col w-full h-screen bg-yellow-100 justify-center">
       <Header type="progress" questionNo={questionNo} />
       <div className="flex flex-col justify-center items-center mt-12">
-        <div className="mb-12 text-3xl text-center">
+        <div className="text-xl sm:text-3xl text-center mb-10 p-7">
           {QuestionData[questionNo].title}
         </div>
 
         <div className="flex flex-col items-center justify-center">
           <button
-            className="w-10/12 h-24 btn btn-warning text-neutral-500 m-2 text-b p-1"
+            className="w-[20rem] sm:w-[28rem] text-sm sm:text-lg h-24 btn btn-warning text-neutral-500 m-2 p-1"
             onClick={() => handleClickAnswer(1, QuestionData[questionNo].type)}
           >
             {QuestionData[questionNo].answera}
           </button>
           <button
-            className="w-10/12 h-24 btn btn-warning text-neutral-500 m-2 text-b"
+            className="w-[20rem] sm:w-[28rem] h-24 btn btn-warning text-neutral-500 m-2 text-sm sm:text-lg"
             onClick={() => handleClickAnswer(0, QuestionData[questionNo].type)}
           >
             {QuestionData[questionNo].answerb}

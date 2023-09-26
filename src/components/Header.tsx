@@ -7,7 +7,7 @@ interface Props {
 
 export default function Header(props: Props) {
   return (
-    <div className="bg-orange-400 flex text-3xl items-center justify-center p-4">
+    <div className="fixed top-0 w-full bg-orange-400 flex text-xl sm:text-3xl items-center justify-center p-4 ">
       {props.type === "progress" ? (
         <progress
           className="progress progress-error w-full h-7"
